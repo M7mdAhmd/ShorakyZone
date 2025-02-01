@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "Customer Feedback Sentiment Analysis",
       description: "Real-time sentiment analysis system for text classification and market insights",
-      image: "media/customer-feedback-sentiment-analysis.png",
+      image: "media/customer-feedback-sentiment-analysis.jpg",
       tags: ["BERT", "Python", "NLP", "NLTK"],
       achievements: [
         "97% classification accuracy",
@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Telecom Customer Churn Analysis",
       description: "Deep learning system for predicting customer retention and churn risk",
-      image: "media/telecom-customer-churn-analysis.png",
+      image: "media/telecom-customer-churn-analysis.jpg",
       tags: ["ML", "Python", "PyTorch", "TensorFlow"],
       achievements: [
         "83% accuracy with PyTorch model",
@@ -36,7 +36,7 @@ export default function Projects() {
     {
       title: "Yallakora Web Scraper",
       description: "Web scraper for extracting football match data from Yallakora",
-      image: "media/yallakora-web-scraper.png",
+      image: "media/yallakora-web-scraper.jpg",
       tags: ["Web Scraping", "Python", "BeautifulSoup", "LXML"],
       achievements: [
         "Date-based scraping to extract match details",

@@ -25,8 +25,8 @@ export default function Hero() {
       className="min-h-screen flex items-center justify-center relative bg-cover bg-center"
       style={{
         backgroundImage: isSmallScreen
-          ? "url(media/home-page-background-small.png)"
-          : "url(media/home-page-background-large.png)",
+          ? "url(media/home-page-background-small.jpg)"
+          : "url(media/home-page-background-large.jpg)",
       }}
     >
       {/* Content */}
