@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Telecom Customer Churn Analysis",
       description: "Deep learning system for predicting customer retention and churn risk",
-      image: "media/telecom-customer-churn-nalysis.png",
+      image: "media/telecom-customer-churn-analysis.png",
       tags: ["ML", "Python", "PyTorch", "TensorFlow"],
       achievements: [
         "83% accuracy with PyTorch model",
