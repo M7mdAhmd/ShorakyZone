@@ -69,7 +69,7 @@ export default function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-gray-100 rounded-lg">
+                <div className="p-3 bg-blue-50 rounded-lg">
                   <Mail className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-gray-100 rounded-lg">
+                <div className="p-3 bg-blue-50 rounded-lg">
                   <Phone className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export default function Contact() {
               </div>
               
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-gray-100 rounded-lg">
+                <div className="p-3 bg-blue-50 rounded-lg">
                   <MapPin className="w-6 h-6 text-gray-700" />
                 </div>
                 <div>
