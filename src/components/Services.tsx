@@ -4,41 +4,41 @@ import { Brain, MonitorPlay , BrainCircuit, Database, Bot, Search, Code } from '
 export default function Services() {
   const services = [
     {
-      icon: Brain,
-      title: "ML Model",
-      description: "Custom machine learning solutions tailored to your specific needs",
-      price: "Starting at $30",
-      features: [
-        "Custom model architecture",
-        "Data preprocessing",
-        "Model training & optimization",
-        "Deployment support"
-      ]
-    },
-    {
-      icon: Bot,
-      title: "NLP Solutions",
-      description: "Natural Language Processing solutions for text analysis and understanding",
-      price: "Starting at $50",
-      features: [
-        "Custom text classification",
-        "Sequence modeling (RNN, GRU, LSTM)",
-        "Sentiment Analysis",
-        "Transfer learning with BERT"
-      ]
-    },
-    {
       icon: BrainCircuit,
-      title: "Deep Learning",
-      description: "Advanced neural network solutions for complex problems",
+      title: "AI Model Development",
+      description: "Custom machine learning and deep learning solutions for your needs",
       price: "Starting at $40",
       features: [
-        "CNN architecture design",
-        "Transfer learning",
-        "Model optimization",
-        "Performance analysis"
+        "Custom model design",
+        "Data preprocessing",
+        "Neural networks & transfer learning",
+        "Model deployment"
       ]
     },
+    // {
+    //   icon: Bot,
+    //   title: "NLP Solutions",
+    //   description: "Natural Language Processing solutions for text analysis and understanding",
+    //   price: "Starting at $50",
+    //   features: [
+    //     "Custom text classification",
+    //     "Sequence modeling (RNN, GRU, LSTM)",
+    //     "Sentiment Analysis",
+    //     "Transfer learning with BERT"
+    //   ]
+    // },
+    // {
+      // icon: Brain,
+    //   title: "Deep Learning",
+    //   description: "Advanced neural network solutions for complex problems",
+    //   price: "Starting at $40",
+    //   features: [
+    //     "CNN architecture design",
+    //     "Transfer learning",
+    //     "Model optimization",
+    //     "Performance analysis"
+    //   ]
+    // },
     {
       icon: Database ,
       title: "Data Analysis",
@@ -63,30 +63,30 @@ export default function Services() {
         "Delivery in CSV or JSON"
       ]
     },
-    {
-      icon: MonitorPlay  ,
-      title: "Model Deployment",
-      description: "Deploying your ML models as scalable and user-friendly web applications",
-      price: "Starting at $20",
-      features: [
-        "Flask API for model deployment",
-        "Integrate trained ML models",
-        "User-friendly web interface",
-        "Basic monitoring and maintenance"
-      ]
-    }
-    ,{
-      icon: Code,
-      title: "Web Developmet",
-      description: "Building responsive, interactive websites tailored to your needs",
-      price: "Starting at $20",
-      features: [
-        "Custom website with HTML, CSS, and JS",
-        "Fully responsive design",
-        "Interactive elements and animations",
-        "Contact form integration"
-      ]
-    }
+    // {
+    //   icon: MonitorPlay  ,
+    //   title: "Model Deployment",
+    //   description: "Deploying your ML models as scalable and user-friendly web applications",
+    //   price: "Starting at $20",
+    //   features: [
+    //     "Flask API for model deployment",
+    //     "Integrate trained ML models",
+    //     "User-friendly web interface",
+    //     "Basic monitoring and maintenance"
+    //   ]
+    // }
+    // ,{
+    //   icon: Code,
+    //   title: "Web Developmet",
+    //   description: "Building responsive, interactive websites tailored to your needs",
+    //   price: "Starting at $20",
+    //   features: [
+    //     "Custom website with HTML, CSS, and JS",
+    //     "Fully responsive design",
+    //     "Interactive elements and animations",
+    //     "Contact form integration"
+    //   ]
+    // }
   ];
 
   return (
