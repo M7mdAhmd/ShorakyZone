@@ -20,7 +20,7 @@ const SocialLinks = ({ isScrolled }) => (
        aria-label="LinkedIn">
       <Linkedin size={20} />
     </a>
-    <a href="https://m7mdahmd.github.io/shorakyportfolio/" target="_blank" rel="noopener noreferrer" 
+    <a href="https://github.com/M7mdAhmd" target="_blank" rel="noopener noreferrer" 
        className={`${isScrolled ? 'text-blue-800 hover:text-blue-500' : 'text-white hover:text-gray-300'} transition-colors`}
        aria-label="GitHub">
       <Github size={20} />
