@@ -40,7 +40,7 @@ const SocialLinks = ({ isScrolled }) => (
 
 const NavLinks = ({ onClick, isScrolled }) => (
   <>
-    {['home', 'about', 'skills', 'services', 'projects', 'contact'].map((item) => (
+    {['home', 'about', 'skills'/*, 'services'*/, 'projects', 'contact'].map((item) => (
       <button
         key={item}
         onClick={() => onClick(item)}
