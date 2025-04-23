@@ -140,7 +140,7 @@ export default function Header() {
             className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg"
           >
             <div className="flex flex-col space-y-4 p-6">
-              {['home', 'about', 'skills', 'services', 'projects', 'contact'].map((item, index) => (
+              {['home', 'about', 'skills' /*,'services'*/, 'projects', 'contact'].map((item, index) => (
                 <React.Fragment key={item}>
                   <button
                     onClick={() => scrollToSection(item)}
