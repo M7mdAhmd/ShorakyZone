@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Real-Time Health Monitoring and Prediction System",
       description: "IoT-powered health tracker with live sensor data and ML-based condition prediction.",
-      image: "media/real-time-health-monitoring.jpg",
+      image: "media/real-time-health-monitoring.png",
       tags: ["ESP32", "PyTorch", "IoT", "Firebase", "Flask"],
       achievements: [
         "97% accuracy with PyTorch DNN",
