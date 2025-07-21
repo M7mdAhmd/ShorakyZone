@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "Vision-Based Virtual Keyboard",
       description: "Contactless virtual keyboard using hand gestures",
-      image: "media/virtual_keyboard.png",
+      image: "media/virtual_keyboard.jpg",
       tags: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
       achievements: [
         "Real-time fingertip and pinch tracking",
