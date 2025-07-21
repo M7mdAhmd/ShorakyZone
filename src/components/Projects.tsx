@@ -4,6 +4,21 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
+      title: "Vision-Based Virtual Keyboard",
+      description: "Contactless virtual keyboard using hand gestures",
+      image: "media\virtual_keyboard.png",
+      tags: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
+      achievements: [
+        "Real-time fingertip and pinch tracking",
+        "Virtual keyboard UI with OpenCV",
+        "Gesture-based typing with live output"
+      ],
+      links: {
+        // demo: "",
+        github: "https://github.com/M7mdAhmd/vision-based-virtual-keyboard"
+      }
+    },    
+    {
       title: "Customer Feedback Sentiment Analysis",
       description: "Real-time sentiment analysis system for text classification and market insights",
       image: "media/customer-feedback-sentiment-analysis.jpg",
