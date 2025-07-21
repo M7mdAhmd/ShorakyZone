@@ -25,7 +25,7 @@ export default function Projects() {
       tags: ["ESP32", "PyTorch", "IoT", "Firebase", "Flask"],
       achievements: [
         "97% accuracy with PyTorch DNN",
-        "Live ECG, SpO₂, and temperature via ESP32",
+        "Live ECG, SpO₂ and temperature via ESP32",
         "Firebase sync with Flask API and Web UI"
       ],
       links: {
