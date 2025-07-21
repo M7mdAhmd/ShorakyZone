@@ -17,7 +17,22 @@ export default function Projects() {
         // demo: "",
         github: "https://github.com/M7mdAhmd/vision-based-virtual-keyboard"
       }
-    },    
+    }, 
+    {
+      title: "Real-Time Health Monitoring and Prediction System",
+      description: "IoT-powered health tracker with live sensor data and ML-based condition prediction.",
+      image: "media/real-time-health-monitoring.jpg",
+      tags: ["ESP32", "PyTorch", "IoT", "Firebase", "Flask"],
+      achievements: [
+        "97% accuracy with PyTorch DNN",
+        "Live ECG, SpO₂, and temperature via ESP32",
+        "Firebase sync with Flask API and Web UI"
+      ],
+      links: {
+        // demo: "",
+        github: "https://github.com/M7mdAhmd/Smart-Health-Monitor"
+      }
+    }, 
     {
       title: "Customer Feedback Sentiment Analysis",
       description: "Real-time sentiment analysis system for text classification and market insights",
