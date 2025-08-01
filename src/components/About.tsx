@@ -26,7 +26,7 @@ export default function About() {
                 Passionate About AI & Machine Learning
               </h3>
               <p className="text-slate-600 mb-6">
-                I'm Mohamed, a machine learning engineer and Computer Engineering student focused on delivering solutions to real-world problems while improving my skills for top-quality outcomes
+                I'm Mohamed, an AI & ML engineer and Computer Engineering student focused on delivering solutions to real-world problems while improving my skills for top-quality outcomes
               </p>
               <p className="text-slate-600 mb-8">
                 My goal is to stand out through my work, bringing creativity and innovation to the forefront, and build my business to create solutions that enhance lives and make a lasting impact.
