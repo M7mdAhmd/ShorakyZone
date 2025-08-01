@@ -17,7 +17,22 @@ export default function Projects() {
         // demo: "",
         github: "https://github.com/M7mdAhmd/vision-based-virtual-keyboard"
       }
-    }, 
+    },
+    {
+      title: "Face Recognition Attendance System",
+      description: "Real-time face recognition for automated attendance",
+      image: "media/face_attendance_system.png",
+      tags: ["Computer Vision", "OpenCV", "DeepFace", "YuNet"],
+      achievements: [
+          "Real-time face detection with YuNet",
+          "Accurate recognition using DeepFace",
+          "Fast search via FAISS"
+      ],
+      links: {
+        // demo: "",
+        github: "https://github.com/M7mdAhmd/smart-attendance-system"
+      }
+    },
     {
       title: "Real-Time Health Monitoring and Prediction System",
       description: "IoT-powered health tracker with live sensor data and ML-based condition prediction.",
