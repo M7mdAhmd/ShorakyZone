@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrainCog, Code, Globe, Workflow } from 'lucide-react';
+import { BrainCog, Code, Globe, Workflow, Eye } from 'lucide-react';
 
 export default function Skills() {
   const skills = [
     {
-      category: "ML & Data Science",
+      category: "AI & Data Science",
       icon: BrainCog,
       items: [
         { name: "PyTorch", level: 80 },
@@ -14,6 +14,16 @@ export default function Skills() {
         { name: "MatPlotLib", level: 90 },
         { name: "Seaborn", level: 85 },
         { name: "SQL", level: 65 }
+      ]
+    },
+    {
+      category: "Computer Vision",
+      icon: Eye,
+      items: [
+        { name: "YOLO", level: 80 },
+        { name: "OpenCV", level: 75 },
+        { name: "MediaPipe", level: 70 },
+        { name: "DeepFace", level: 80 }
       ]
     },
     {

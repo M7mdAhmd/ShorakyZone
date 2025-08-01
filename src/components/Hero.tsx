@@ -35,7 +35,7 @@ export default function Hero() {
           Hi, <br /> I'm <span className="text-white">Mohamed Elshoraky</span>
         </h1>
         <p className="text-2xl md:text-3xl mb-8">
-          {isExtraSmallScreen ? 'AI & ML Engineer' : 'AI & ML Engineer'}
+          {isExtraSmallScreen ? 'AI & Machine Learning Engineer' : 'AI & ML Engineer'}
         </p>
         <p className="text-base mb-12 max-w-xl text-gray-400">
           Because your data deserves
