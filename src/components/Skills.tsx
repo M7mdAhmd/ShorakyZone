@@ -141,13 +141,6 @@ export default function Skills() {
 
                   <div className="w-20 h-20 lg:w-24 lg:h-24 mx-auto mb-4 lg:mb-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-blue-200 overflow-hidden">
                     <img src={skill.iconPath} alt={skill.name} className="w-16 h-16 lg:w-20 lg:h-20 object-contain" />
-                    
-                    {/* Placeholder - Remove when adding real images */}
-                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-blue-200 rounded-xl flex items-center justify-center">
-                      <span className="text-blue-600 font-bold text-xl lg:text-2xl">
-                        {skill.name.charAt(0)}
-                      </span>
-                    </div>
                   </div>
                   
                   {/* Skill Name */}
