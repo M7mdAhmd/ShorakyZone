@@ -8,7 +8,7 @@ export default function Skills() {
       icon: BrainCog,
       items: [
         { name: "PyTorch", level: "Intermediate", iconPath: "media/PyTorch.png" },
-        { name: "Keras", level: "Intermediate", iconPath: "media/keras.png" },
+        { name: "Keras", level: "Intermediate", iconPath: "media/Keras.png" },
         { name: "Scikit-Learn", level: "Intermediate", iconPath: "media/sklearn.png" },
         { name: "NumPy", level: "Advanced", iconPath: "media/NumPy.png" },
         { name: "Pandas", level: "Advanced", iconPath: "media/Pandas.png" },
@@ -34,7 +34,7 @@ export default function Skills() {
         { name: "Python", level: "Advanced", iconPath: "media/python.png" },
         { name: "Assembly", level: "Beginner", iconPath: "media/assembly.png" },
         { name: "Data Structures & Algorithms", level: "Beginner", iconPath: "media/dsa.png" },
-        { name: "OOP", level: "Advanced", iconPath: "media/oop.png" }
+        { name: "OOP", level: "Advanced", iconPath: "media/OOP.png" }
       ]
     },
     {
