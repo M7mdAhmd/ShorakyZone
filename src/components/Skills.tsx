@@ -7,53 +7,54 @@ export default function Skills() {
       category: "AI & Data Science",
       icon: BrainCog,
       items: [
-        { name: "PyTorch", level: 80, iconPath: "media/PyTorch.png" },
-        { name: "Scikit-Learn", level: 85, iconPath: "media/sklearn.png" },
-        { name: "NumPy", level: 85, iconPath: "media/NumPy.png" },
-        { name: "Pandas", level: 80, iconPath: "media/Pandas.png" },
-        { name: "MatPlotLib", level: 90, iconPath: "media/Matplotlib.png" },
-        { name: "Seaborn", level: 85, iconPath: "media/seaborn.png" },
-        { name: "SQL", level: 65, iconPath: "media/sql.png" }
+        { name: "PyTorch", level: "Intermediate", iconPath: "media/PyTorch.png" },
+        { name: "Keras", level: "Intermediate", iconPath: "media/keras.png" },
+        { name: "Scikit-Learn", level: "Intermediate", iconPath: "media/sklearn.png" },
+        { name: "NumPy", level: "Advanced", iconPath: "media/NumPy.png" },
+        { name: "Pandas", level: "Advanced", iconPath: "media/Pandas.png" },
+        { name: "MatPlotLib", level: "Advanced", iconPath: "media/Matplotlib.png" },
+        { name: "Seaborn", level: "Intermediate", iconPath: "media/seaborn.png" },
+        { name: "SQL", level: "Beginner", iconPath: "media/sql.png" }
       ]
     },
     {
       category: "Computer Vision",
       icon: Eye,
       items: [
-        { name: "YOLO", level: 80, iconPath: "media/yolo.png" },
-        { name: "OpenCV", level: 75, iconPath: "media/opencv.png" },
-        { name: "MediaPipe", level: 70, iconPath: "media/mediapipe.png" },
-        { name: "DeepFace", level: 80, iconPath: "media/deepface.png" }
+        { name: "YOLO", level: "Intermediate", iconPath: "media/yolo.png" },
+        { name: "OpenCV", level: "Intermediate", iconPath: "media/opencv.png" },
+        { name: "MediaPipe", level: "Intermediate", iconPath: "media/mediapipe.png" },
+        { name: "DeepFace", level: "Intermediate", iconPath: "media/deepface.png" }
       ]
     },
     {
       category: "Programming",
       icon: Code,
       items: [
-        { name: "Python", level: 90, iconPath: "media/python.png" },
-        { name: "Assembly", level: 60, iconPath: "media/assembly.png" },
-        { name: "Data Structures & Algorithms", level: 65, iconPath: "media/datasa.png" },
-        { name: "OOP", level: 85, iconPath: "media/objop.png" }
+        { name: "Python", level: "Advanced", iconPath: "media/python.png" },
+        { name: "Assembly", level: "Beginner", iconPath: "media/assembly.png" },
+        { name: "Data Structures & Algorithms", level: "Beginner", iconPath: "media/dsa.png" },
+        { name: "OOP", level: "Advanced", iconPath: "media/oop.png" }
       ]
     },
     {
       category: "Web",
       icon: Globe,
       items: [
-        { name: "Web Scraping", level: 65, iconPath: "media/scraping.png" },
-        { name: "HTML", level: 95, iconPath: "media/html.png" },
-        { name: "CSS", level: 90, iconPath: "media/css.png" }
+        { name: "Web Scraping", level: "Intermediate", iconPath: "media/scraping.png" },
+        { name: "HTML", level: "Advanced", iconPath: "media/html.png" },
+        { name: "CSS", level: "Advanced", iconPath: "media/css.png" }
       ]
     },
     {
       category: "MLOps",
       icon: Workflow,
       items: [
-        { name: "Azure", level: 70, iconPath: "media/azure.png" },
-        { name: "MLflow", level: 80, iconPath: "media/MLflow.png" },
-        { name: "Git", level: 90, iconPath: "media/git.png" },
-        { name: "GitHub", level: 90, iconPath: "media/github.png" },
-        { name: "Flask", level: 75, iconPath: "media/Flask.png" }
+        { name: "Azure", level: "Intermediate", iconPath: "media/azure.png" },
+        { name: "MLflow", level: "Advanced", iconPath: "media/MLflow.png" },
+        { name: "Git", level: "Advanced", iconPath: "media/git.png" },
+        { name: "GitHub", level: "Advanced", iconPath: "media/github.png" },
+        { name: "Flask", level: "Intermediate", iconPath: "media/Flask.png" }
       ]
     }
   ];
@@ -73,15 +74,9 @@ export default function Skills() {
     }, 200);
   };
 
-  const getSkillLevel = (level) => {
-    if (level <= 50) return "Beginner";
-    if (level <= 75) return "Intermediate";
-    return "Advanced";
-  };
-
   const getLevelColor = (level) => {
-    if (level <= 50) return "bg-slate-200 text-slate-700 border border-slate-300";
-    if (level <= 75) return "bg-amber-100 text-amber-800 border border-amber-300";
+    if (level === "Beginner") return "bg-slate-200 text-slate-700 border border-slate-300";
+    if (level === "Intermediate") return "bg-amber-100 text-amber-800 border border-amber-300";
     return "bg-emerald-100 text-emerald-800 border border-emerald-300";
   };
 
@@ -133,7 +128,7 @@ export default function Skills() {
                     minHeight: '200px'
                   }}
                 >
-                  {skill.level >= 76 && (
+                  {skill.level === "Advanced" && (
                     <div className="absolute -top-1 -right-1 w-6 h-6 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-md z-10">
                       <span className="text-white font-bold text-xs">★</span>
                     </div>
@@ -151,7 +146,7 @@ export default function Skills() {
                   {/* Skill Level Badge */}
                   <div className="flex justify-center">
                     <span className={`px-4 lg:px-6 py-2 lg:py-3 rounded-xl text-xs lg:text-sm font-semibold transition-all duration-300 ${getLevelColor(skill.level)}`}>
-                      {getSkillLevel(skill.level)}
+                      {skill.level}
                     </span>
                   </div>
                 </div>
