@@ -67,7 +67,7 @@ export default function Skills() {
     }
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("Machine Learning & DL");
+  const [selectedCategory, setSelectedCategory] = useState("Data Science");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleCategoryChange = (category) => {
