@@ -32,8 +32,8 @@ export default function Skills() {
       items: [
         { name: "Python", level: 90, iconPath: "media/python.png" },
         { name: "Assembly", level: 60, iconPath: "media/assembly.png" },
-        { name: "Data Structures & Algorithms", level: 65, iconPath: "media/dsa.png" },
-        { name: "OOP", level: 85, iconPath: "media/oop.png" }
+        { name: "Data Structures & Algorithms", level: 65, iconPath: "media/datasa.png" },
+        { name: "OOP", level: 85, iconPath: "media/objop.png" }
       ]
     },
     {
