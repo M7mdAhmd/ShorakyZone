@@ -3,11 +3,8 @@ import React, { useState } from 'react';
 export default function Skills() {
   const skills = [
     {
-      category: "AI & Data Science",
+      category: "Data Science",
       items: [
-        { name: "PyTorch", level: "Intermediate", iconPath: "media/PyTorch.png" },
-        { name: "Keras", level: "Intermediate", iconPath: "media/Keras.png" },
-        { name: "Scikit-Learn", level: "Intermediate", iconPath: "media/sklearn.png" },
         { name: "NumPy", level: "Advanced", iconPath: "media/NumPy.png" },
         { name: "Pandas", level: "Advanced", iconPath: "media/Pandas.png" },
         { name: "MatPlotLib", level: "Advanced", iconPath: "media/Matplotlib.png" },
@@ -17,49 +14,64 @@ export default function Skills() {
       ]
     },
     {
+      category: "Machine Learning & DL",
+      items: [
+        { name: "PyTorch", level: "Intermediate", iconPath: "media/PyTorch.png" },
+        { name: "Keras", level: "Intermediate", iconPath: "media/Keras.png" },
+        { name: "Scikit-Learn", level: "Intermediate", iconPath: "media/sklearn.png" },
+        { name: "Hugging Face", level: "Intermediate", iconPath: "media/huggingface.png" }
+      ]
+    },
+    {
       category: "Computer Vision",
       items: [
         { name: "OpenCV", level: "Intermediate", iconPath: "media/opencv.png" },
         { name: "YOLO", level: "Intermediate", iconPath: "media/yolo.png" },
-        { name: "DeepFace", level: "Intermediate", iconPath: "media/deepface.png" },
-        { name: "MediaPipe", level: "Intermediate", iconPath: "media/mediapipe.png" }
+        { name: "MediaPipe", level: "Intermediate", iconPath: "media/mediapipe.png" },
+        { name: "DeepFace", level: "Intermediate", iconPath: "media/deepface.png" }
+      ]
+    },
+    {
+      category: "NLP",
+      items: [
+        { name: "NLTK", level: "Intermediate", iconPath: "media/nltk.png" },
+        { name: "Regex", level: "Intermediate", iconPath: "media/regex.png" }
       ]
     },
     {
       category: "Programming",
       items: [
         { name: "Python", level: "Advanced", iconPath: "media/python.png" },
-        { name: "Javascript", level: "Beginner", iconPath: "media/js.png" },
+        { name: "JavaScript", level: "Beginner", iconPath: "media/js.png" },
         { name: "Assembly", level: "Beginner", iconPath: "media/assembly.png" },
         { name: "OOP", level: "Advanced", iconPath: "media/OOP.png" },
-        { name: "Data Structures & Algorithms", level: "Beginner", iconPath: "media/dsa.png" }
-      ]
-    },
-    {
-      category: "Web",
-      items: [
-        { name: "HTML", level: "Advanced", iconPath: "media/html.png" },
-        { name: "CSS", level: "Advanced", iconPath: "media/css.png" }
+        { name: "DSA", level: "Beginner", iconPath: "media/dsa.png" }
       ]
     },
     {
       category: "MLOps",
       items: [
+        { name: "MLflow", level: "Advanced", iconPath: "media/MLflow.png" },
+        { name: "Flask", level: "Intermediate", iconPath: "media/Flask.png" },
         { name: "Azure", level: "Intermediate", iconPath: "media/azure.png" },
         { name: "Git", level: "Advanced", iconPath: "media/git.png" },
-        { name: "GitHub", level: "Advanced", iconPath: "media/github.png" },
-        { name: "Flask", level: "Intermediate", iconPath: "media/Flask.png" },
-        { name: "MLflow", level: "Advanced", iconPath: "media/MLflow.png" }
+        { name: "GitHub", level: "Advanced", iconPath: "media/github.png" }
+      ]
+    },
+    {
+      category: "Web Development",
+      items: [
+        { name: "HTML", level: "Advanced", iconPath: "media/html.png" },
+        { name: "CSS", level: "Advanced", iconPath: "media/css.png" }
       ]
     }
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("AI & Data Science");
+  const [selectedCategory, setSelectedCategory] = useState("Machine Learning & DL");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleCategoryChange = (category) => {
     if (category === selectedCategory) return;
-    
     setIsTransitioning(true);
     setTimeout(() => {
       setSelectedCategory(category);
@@ -84,22 +96,21 @@ export default function Skills() {
           Technical Skills
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
-          {skills.map((skillGroup, index) => {
-            return (
-              <button
-                key={index}
-                onClick={() => handleCategoryChange(skillGroup.category)}
-                className={`flex items-center gap-3 px-6 py-3 rounded-xl font-medium transition-all duration-500 ${
+        <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-6xl mx-auto">
+          {skills.map((skillGroup, index) => (
+            <button
+              key={index}
+              onClick={() => handleCategoryChange(skillGroup.category)}
+              className={`w-fit px-4 py-2 rounded-xl font-medium text-sm text-center transition-all duration-500
+                ${
                   selectedCategory === skillGroup.category
                     ? 'bg-blue-600 text-white shadow-lg scale-105'
                     : 'bg-white text-gray-700 hover:bg-blue-50 shadow-md hover:shadow-lg border border-blue-200/50'
                 }`}
-              >
-                <span className="hidden sm:inline whitespace-nowrap">{skillGroup.category}</span>
-              </button>
-            );
-          })}
+            >
+              {skillGroup.category}
+            </button>
+          ))}
         </div>
 
         {selectedSkillGroup && (
@@ -111,7 +122,7 @@ export default function Skills() {
                 <div
                   key={skillIndex}
                   className="group relative bg-white p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 hover:border-blue-200 hover:-translate-y-2"
-                  style={{ 
+                  style={{
                     animationDelay: `${skillIndex * 50}ms`,
                     minHeight: '200px'
                   }}
