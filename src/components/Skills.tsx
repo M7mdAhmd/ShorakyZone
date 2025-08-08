@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { BrainCog, Code, Globe, Workflow, Eye } from 'lucide-react';
 
 export default function Skills() {
   const skills = [
     {
       category: "AI & Data Science",
-      icon: BrainCog,
       items: [
         { name: "PyTorch", level: "Intermediate", iconPath: "media/PyTorch.png" },
         { name: "Keras", level: "Intermediate", iconPath: "media/Keras.png" },
@@ -14,22 +12,21 @@ export default function Skills() {
         { name: "Pandas", level: "Advanced", iconPath: "media/Pandas.png" },
         { name: "MatPlotLib", level: "Advanced", iconPath: "media/Matplotlib.png" },
         { name: "Seaborn", level: "Intermediate", iconPath: "media/seaborn.png" },
-        { name: "SQL", level: "Beginner", iconPath: "media/sql.png" }
+        { name: "SQL", level: "Beginner", iconPath: "media/sql.png" },
+        { name: "BeautifulSoup", level: "Intermediate", iconPath: "media/bs.png" }
       ]
     },
     {
       category: "Computer Vision",
-      icon: Eye,
       items: [
-        { name: "YOLO", level: "Intermediate", iconPath: "media/yolo.png" },
         { name: "OpenCV", level: "Intermediate", iconPath: "media/opencv.png" },
-        { name: "MediaPipe", level: "Intermediate", iconPath: "media/mediapipe.png" },
-        { name: "DeepFace", level: "Intermediate", iconPath: "media/deepface.png" }
+        { name: "YOLO", level: "Intermediate", iconPath: "media/yolo.png" },
+        { name: "DeepFace", level: "Intermediate", iconPath: "media/deepface.png" },
+        { name: "MediaPipe", level: "Intermediate", iconPath: "media/mediapipe.png" }
       ]
     },
     {
       category: "Programming",
-      icon: Code,
       items: [
         { name: "Python", level: "Advanced", iconPath: "media/python.png" },
         { name: "Javascript", level: "Beginner", iconPath: "media/js.png" },
@@ -40,22 +37,19 @@ export default function Skills() {
     },
     {
       category: "Web",
-      icon: Globe,
       items: [
-        { name: "Web Scraping", level: "Intermediate", iconPath: "media/scraping.png" },
         { name: "HTML", level: "Advanced", iconPath: "media/html.png" },
         { name: "CSS", level: "Advanced", iconPath: "media/css.png" }
       ]
     },
     {
       category: "MLOps",
-      icon: Workflow,
       items: [
         { name: "Azure", level: "Intermediate", iconPath: "media/azure.png" },
-        { name: "MLflow", level: "Advanced", iconPath: "media/MLflow.png" },
         { name: "Git", level: "Advanced", iconPath: "media/git.png" },
         { name: "GitHub", level: "Advanced", iconPath: "media/github.png" },
-        { name: "Flask", level: "Intermediate", iconPath: "media/Flask.png" }
+        { name: "Flask", level: "Intermediate", iconPath: "media/Flask.png" },
+        { name: "MLflow", level: "Advanced", iconPath: "media/MLflow.png" }
       ]
     }
   ];
@@ -90,10 +84,8 @@ export default function Skills() {
           Technical Skills
         </h2>
 
-        {/* Category Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-16">
           {skills.map((skillGroup, index) => {
-            const IconComponent = skillGroup.icon;
             return (
               <button
                 key={index}
@@ -104,19 +96,14 @@ export default function Skills() {
                     : 'bg-white text-gray-700 hover:bg-blue-50 shadow-md hover:shadow-lg border border-blue-200/50'
                 }`}
               >
-                <IconComponent className={`w-5 h-5 ${
-                  selectedCategory === skillGroup.category ? 'text-white' : 'text-blue-600'
-                }`} />
                 <span className="hidden sm:inline whitespace-nowrap">{skillGroup.category}</span>
               </button>
             );
           })}
         </div>
 
-        {/* Selected Category Skills */}
         {selectedSkillGroup && (
           <div className="max-w-7xl mx-auto">
-            
             <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8 transition-all duration-500 ${
               isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
             }`}>
@@ -138,13 +125,11 @@ export default function Skills() {
                   <div className="w-20 h-20 lg:w-24 lg:h-24 mx-auto mb-4 lg:mb-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-blue-200 overflow-hidden">
                     <img src={skill.iconPath} alt={skill.name} className="w-16 h-16 lg:w-20 lg:h-20 object-contain" />
                   </div>
-                  
-                  {/* Skill Name */}
+
                   <h4 className="text-center text-sm lg:text-base font-semibold text-gray-800 mb-4 lg:mb-6 leading-tight min-h-[40px] lg:min-h-[48px] flex items-center justify-center px-2">
                     {skill.name}
                   </h4>
-                  
-                  {/* Skill Level Badge */}
+
                   <div className="flex justify-center">
                     <span className={`px-4 lg:px-6 py-2 lg:py-3 rounded-xl text-xs lg:text-sm font-semibold transition-all duration-300 ${getLevelColor(skill.level)}`}>
                       {skill.level}
