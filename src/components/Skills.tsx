@@ -32,9 +32,10 @@ export default function Skills() {
       icon: Code,
       items: [
         { name: "Python", level: "Advanced", iconPath: "media/python.png" },
+        { name: "Javascript", level: "Beginner", iconPath: "media/js.png" },
         { name: "Assembly", level: "Beginner", iconPath: "media/assembly.png" },
-        { name: "Data Structures & Algorithms", level: "Beginner", iconPath: "media/dsa.png" },
         { name: "OOP", level: "Advanced", iconPath: "media/OOP.png" }
+        { name: "Data Structures & Algorithms", level: "Beginner", iconPath: "media/dsa.png" },
       ]
     },
     {
