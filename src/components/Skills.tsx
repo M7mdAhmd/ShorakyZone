@@ -10,6 +10,7 @@ export default function Skills() {
         { name: "MatPlotLib", level: "Advanced", iconPath: "media/Matplotlib.png" },
         { name: "Seaborn", level: "Intermediate", iconPath: "media/seaborn.png" },
         { name: "SQL", level: "Beginner", iconPath: "media/sql.png" },
+        { name: "Selenium", level: "Intermediate", iconPath: "media/selenium.png" },
         { name: "BeautifulSoup", level: "Intermediate", iconPath: "media/bs.png" }
       ]
     },
